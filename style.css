@@ -1,0 +1,245 @@
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #d90429;
+    margin-bottom: 30px;
+}
+
+/* Subtítulo */
+h2 {
+    color: #003566;
+    border-bottom: 3px solid #d90429;
+    padding-bottom: 8px;
+}
+
+/* Formulário */
+body {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #003566;
+}
+
+/* Campos */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #003566;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Quando clicar no campo */
+input:focus {
+    border-color: #d90429;
+    box-shadow: 0 0 5px rgba(217, 4, 41, 0.4);
+}
+
+/* Botões */
+button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Botão cadastrar */
+button[type="submit"] {
+    background-color: #0408e7;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #a90321;
+}
+
+/* Botão limpar */
+button[type="reset"] {
+    background-color: #e9052b;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #00264d;
+}
+#resultado {
+    margin-top: 30px;
+}
+
+.cadastro {
+    background-color: white;
+    border: 3px solid #003566;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cadastro h2 {
+    color: #d90429;
+    margin-top: 0;
+}
+
+.cadastro h3 {
+    color: #003566;
+}
+
+.cadastro ol {
+    padding-left: 25px;
+}
+
+.cadastro li {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #f1f5f9;
+    border-left: 4px solid #d90429;
+}
+.botaoPontos {
+    display: inline-block;
+    background-color: #003566;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botaoPontos:hover {
+    background-color: #001d3d;
+}
+.classificacao {
+    background-color: white;
+    border: 3px solid #003566;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.classificacao h2 {
+    color: #d90429;
+    text-align: center;
+}
+
+.item-ranking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    border-left: 5px solid #003566;
+}
+
+.item-ranking:first-child {
+    background-color: #fff3cd;
+    border-left-color: #d4af37;
+}
+
+.item-ranking:nth-child(2) {
+    border-left-color: #aaa;
+}
+
+.item-ranking:nth-child(3) {
+    border-left-color: #cd7f32;
+}
+
+.posicao {
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 45px;
+}
+
+.prova {
+    background-color: #f8f9fa;
+    border: 1px solid #003566;
+    border-left: 5px solid #d90429;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.prova p {
+    margin: 10px 0;
+}
+
+.total {
+    background-color: #003566;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.total span {
+    color: #ffccd5;
+    font-size: 24px;
+}
+.confirmacao-exclusao {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirmacao-exclusao p {
+    margin: 0 0 12px;
+    color: #664d03;
+    font-weight: bold;
+}
+
+.confirmar-exclusao,
+.cancelar-exclusao {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.confirmar-exclusao {
+    background-color: #d90429;
+    color: white;
+}
+
+.cancelar-exclusao {
+    background-color: #003566;
+    color: white;
+}
+
+.confirmar-exclusao:hover {
+    background-color: #a90321;
+}
+
+.cancelar-exclusao:hover {
+    background-color: #002244;
+}

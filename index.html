@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gincana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cadastro de Salas</h1>
+
+    <label for="sala">Sala:</label>
+    <br>
+    <input type="text" id="sala" name="nome" placeholder="Ex: 2TIV" required>
+    <br><br>
+
+    <label for="participantes">
+        Números de participantes da sala:
+    </label>
+    <br>
+
+    <input
+        type="number"
+        id="participantes"
+        placeholder="Ex: 10"
+        min="4"
+        required
+    >
+
+    <br><br>
+
+    <h2>Provas</h2>
+
+    <label for="prova1">Prova 1:</label>
+    <br>
+    <input type="text" id="prova1" placeholder="Participantes" required>
+    <br><br>
+
+    <label for="prova2">Prova 2:</label>
+    <br>
+    <input type="text" id="prova2" placeholder="Participantes" required>
+    <br><br>
+
+    <label for="prova3">Prova 3:</label>
+    <br>
+    <input type="text" id="prova3" placeholder="Participantes" required>
+    <br><br>
+
+    <label for="prova4">Prova 4:</label>
+    <br>
+    <input type="text" id="prova4" placeholder="Participantes" required>
+    <br><br>
+
+    <label for="prova5">Prova 5:</label>
+    <br>
+    <input type="text" id="prova5" placeholder="Participantes" required>
+    <br><br>
+
+    <label for="prova6">Prova 6:</label>
+    <br>
+    <input type="text" id="prova6" placeholder="Participantes" required>
+    <br><br>
+
+    <label for="prova7">Prova 7:</label>
+    <br>
+    <input type="text" id="prova7" placeholder="Participantes" required>
+    <br><br>
+
+    <label for="prova8">Prova 8:</label>
+    <br>
+    <input type="text" id="prova8" placeholder="Participantes" required>
+    <br><br>
+
+    <button type="submit">
+        Cadastrar sala
+    </button>
+
+    <button type="reset">
+        Limpar tudo
+    </button>
+
+    <a href="pontos.html" class="botaoPontos">
+        Sistema de Pontos
+    </a>
+
+    <p id="mensagem"></p>
+
+    <div id="resultado"></div>
+
+    <section class="classificacao">
+        <h2>Classificação</h2>
+        <div id="rankingInicial"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="proj.js"></script>
+
+</body>
+</html>

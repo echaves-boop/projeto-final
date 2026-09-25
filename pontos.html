@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pontos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Sistema de Pontos</h1>
+
+    <div id="login">
+
+        <h2>Acesso ao sistema</h2>
+
+        <label for="senha">
+            Senha:
+        </label>
+
+        <input
+            type="password"
+            id="senha"
+            placeholder="Digite a senha"
+        >
+
+        <button
+            type="button"
+            id="entrar">
+
+            Entrar
+
+        </button>
+
+        <p id="mensagemLogin"></p>
+
+    </div>
+
+    <div
+        id="sistema"
+        style="display: none;"
+    >
+
+        <div class="classificacao">
+
+            <h2>
+                Classificação geral
+            </h2>
+
+            <div id="ranking"></div>
+
+        </div>
+
+        <h2>
+            Pontuação das salas
+        </h2>
+
+        <div id="listaSalas"></div>
+
+        <hr>
+
+        <h2>
+            Alterar senha
+        </h2>
+
+        <label for="senhaAtual">
+            Senha atual:
+        </label>
+
+        <input
+            type="password"
+            id="senhaAtual"
+            placeholder="Senha atual"
+        >
+
+        <label for="novaSenha">
+            Nova senha:
+        </label>
+
+        <input
+            type="password"
+            id="novaSenha"
+            placeholder="Nova senha"
+        >
+
+        <button
+            type="button"
+            id="alterarSenha">
+
+            Alterar senha
+
+        </button>
+
+        <p id="mensagemSenha"></p>
+
+        <br><br>
+
+        <button
+            type="button"
+            id="sair">
+
+            Sair
+
+        </button>
+
+    </div>
+
+    <br>
+
+    <a href="index.html">
+        Voltar para cadastro de salas
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="pontos.js"></script>
+
+</body>
+</html>
