@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Salas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="pagina-cadastro">
+
+    <h1>Cadastro de Salas</h1>
+
+    <div class="formulario">
+
+        <label for="sala">Sala:</label>
+
+        <input
+            type="text"
+            id="sala"
+            placeholder="Ex: 2TIV"
+        >
+
+        <label for="participantes">
+            Números de participantes da sala:
+        </label>
+
+        <input
+            type="number"
+            id="participantes"
+            placeholder="Ex: 10"
+            min="4"
+        >
+
+        <h2>Provas</h2>
+
+        <label for="descricao1">Descrição da Prova 1:</label>
+
+        <textarea
+            id="descricao1"
+            placeholder="Digite a descrição da Prova 1..."
+        ></textarea>
+
+        <label for="prova1">Participantes:</label>
+
+        <input
+            type="text"
+            id="prova1"
+            placeholder="Participantes"
+        >
+
+
+        <label for="descricao2">Descrição da Prova 2:</label>
+
+        <textarea
+            id="descricao2"
+            placeholder="Digite a descrição da Prova 2..."
+        ></textarea>
+
+        <label for="prova2">Participantes:</label>
+
+        <input
+            type="text"
+            id="prova2"
+            placeholder="Participantes"
+        >
+
+
+        <label for="descricao3">Descrição da Prova 3:</label>
+
+        <textarea
+            id="descricao3"
+            placeholder="Digite a descrição da Prova 3..."
+        ></textarea>
+
+        <label for="prova3">Participantes:</label>
+
+        <input
+            type="text"
+            id="prova3"
+            placeholder="Participantes"
+        >
+
+
+        <label for="descricao4">Descrição da Prova 4:</label>
+
+        <textarea
+            id="descricao4"
+            placeholder="Digite a descrição da Prova 4..."
+        ></textarea>
+
+        <label for="prova4">Participantes:</label>
+
+        <input
+            type="text"
+            id="prova4"
+            placeholder="Participantes"
+        >
+
+
+        <label for="descricao5">Descrição da Prova 5:</label>
+
+        <textarea
+            id="descricao5"
+            placeholder="Digite a descrição da Prova 5..."
+        ></textarea>
+
+        <label for="prova5">Participantes:</label>
+
+        <input
+            type="text"
+            id="prova5"
+            placeholder="Participantes"
+        >
+
+
+        <label for="descricao6">Descrição da Prova 6:</label>
+
+        <textarea
+            id="descricao6"
+            placeholder="Digite a descrição da Prova 6..."
+        ></textarea>
+
+        <label for="prova6">Participantes:</label>
+
+        <input
+            type="text"
+            id="prova6"
+            placeholder="Participantes"
+        >
+
+
+        <label for="descricao7">Descrição da Prova 7:</label>
+
+        <textarea
+            id="descricao7"
+            placeholder="Digite a descrição da Prova 7..."
+        ></textarea>
+
+        <label for="prova7">Participantes:</label>
+
+        <input
+            type="text"
+            id="prova7"
+            placeholder="Participantes"
+        >
+
+
+        <label for="descricao8">Descrição da Prova 8:</label>
+
+        <textarea
+            id="descricao8"
+            placeholder="Digite a descrição da Prova 8..."
+        ></textarea>
+
+        <label for="prova8">Participantes:</label>
+
+        <input
+            type="text"
+            id="prova8"
+            placeholder="Participantes"
+        >
+
+
+        <div class="botoes-cadastro">
+
+            <button
+                type="button"
+                onclick="cadastrarSala()"
+            >
+                Cadastrar sala
+            </button>
+
+            <button
+                type="button"
+                class="botao-limpar"
+                onclick="limparTudo()"
+            >
+                Limpar tudo
+            </button>
+
+        </div>
+
+
+        <a href="index.html" class="botaoPontos">
+            Voltar para área inicial
+        </a>
+
+        <p id="mensagem"></p>
+
+    </div>
+
+
+    <div class="area-cadastros">
+
+        <h2>Dados cadastrados</h2>
+
+        <div id="resultado">
+
+            <p class="sem-cadastro">
+                Nenhuma sala cadastrada.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="alunos.js"></script>
+
+</body>
+
+</html>

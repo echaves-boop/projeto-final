@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0066cc, #8ecae6);
+    min-height: 100vh;
+    padding: 30px 20px;
+    color: #222;
+}
+
+.pagina-cadastro {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 5px solid #d71920;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.pagina-cadastro h1 {
+    color: #0056a6;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #0056a6;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+    height: 46px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 2px solid #0056a6;
+    border-radius: 6px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #d71920;
+    box-shadow: 0 0 5px rgba(215, 25, 32, 0.4);
+}
+
+.formulario h2 {
+    color: #0056a6;
+    text-align: center;
+    margin: 30px 0 20px;
+    border-bottom: 3px solid #d71920;
+    padding-bottom: 8px;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 46px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 2px solid #0056a6;
+    border-radius: 6px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+.formulario input[id^="prova"] {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 20px;
+}
+
+.botoes-cadastro {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.botoes-cadastro button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+}
+
+.botoes-cadastro button:first-child {
+    background-color: #0056a6;
+    color: white;
+}
+
+.botoes-cadastro button:first-child:hover {
+    background-color: #003f7d;
+}
+
+.botoes-cadastro .botao-limpar {
+    background-color: #d71920;
+    color: white;
+}
+
+.botoes-cadastro .botao-limpar:hover {
+    background-color: #a80f15;
+}
+
+.botaoPontos {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+    padding: 12px 20px;
+    background-color: #0056a6;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botaoPontos:hover {
+    background-color: #003f7d;
+}
+
+#mensagem {
+    display: none;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* =========================
+   DADOS CADASTRADOS
+   ========================= */
+
+.area-cadastros {
+    width: 100%;
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 3px solid #0056a6;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.area-cadastros h2 {
+    color: #0056a6;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d71920;
+    padding-bottom: 8px;
+}
+
+#resultado {
+    width: 100%;
+}
+
+.sem-cadastro {
+    text-align: center;
+    color: #666;
+    padding: 15px;
+}
+
+/* Cada sala cadastrada */
+
+.cadastro {
+    background-color: #f8fbff;
+    border: 2px solid #0056a6;
+    border-left: 6px solid #d71920;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+.cadastro h2 {
+    color: #0056a6;
+    text-align: left;
+    border: none;
+    margin: 0 0 12px;
+    padding: 0;
+    font-size: 22px;
+}
+
+.cadastro h3 {
+    color: #0056a6;
+    margin: 15px 0 8px;
+}
+
+.cadastro p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.cadastro ol {
+    padding-left: 25px;
+}
+
+.cadastro li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.botaoEditar {
+    background-color: #0056a6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botaoEditar:hover {
+    background-color: #003f7d;
+}
+
+.botaoExcluir {
+    background-color: #d71920;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botaoExcluir:hover {
+    background-color: #a80f15;
+}
+
+.confirmacao-exclusao {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #fff1f1;
+    border: 1px solid #d71920;
+    border-radius: 6px;
+}
+
+.confirmacao-exclusao p {
+    margin-bottom: 10px;
+}
+
+.confirmacao-exclusao button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.confirmacao-exclusao button:first-of-type {
+    background-color: #d71920;
+    color: white;
+}
+
+.confirmacao-exclusao button:last-of-type {
+    background-color: #0056a6;
+    color: white;
+}
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .pagina-cadastro {
+        width: 95%;
+        margin: 20px auto;
+        padding: 25px 18px;
+    }
+
+    .pagina-cadastro h1 {
+        font-size: 28px;
+    }
+
+    .formulario {
+        max-width: 100%;
+    }
+
+    .formulario textarea {
+        width: 100%;
+    }
+
+    .botoes-cadastro {
+        flex-direction: column;
+    }
+
+    .botoes-cadastro button {
+        width: 100%;
+    }
+
+    .botaoPontos {
+        width: 100%;
+    }
+
+    .area-cadastros {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .botaoEditar,
+    .botaoExcluir {
+        width: 100%;
+        margin-right: 0;
+    }
+}

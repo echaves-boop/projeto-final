@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Classificação - Gincana</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Classificação da Gincana</h1>
+
+    <a href="index.html" class="botaoPontos">
+        Voltar para Cadastro
+    </a>
+
+    <br><br>
+
+    <!-- CLASSIFICAÇÃO GERAL -->
+
+    <section class="classificacao">
+
+        <h2>🏆 Classificação Geral</h2>
+
+        <div id="classificacaoGeral"></div>
+
+    </section>
+
+
+    <br>
+
+
+    <!-- BOTÃO PARA VER PONTUAÇÃO DAS PROVAS -->
+
+    <button
+        type="button"
+        id="botaoMostrarProvas"
+    >
+        Ver pontuação por prova
+    </button>
+
+
+    <!-- CLASSIFICAÇÃO DAS PROVAS -->
+
+    <section
+        id="areaProvas"
+        class="classificacao"
+        style="display:none;"
+    >
+
+        <h2>📋 Pontuação por Prova</h2>
+
+        <div id="classificacoesProvas"></div>
+
+    </section>
+
+
+    <div id="mensagem"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="classificacao.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área dos Professores - Gincana</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="pagina-professores">
+
+        <h1>Área dos Professores</h1>
+
+        <section class="bloco-professor">
+            <h2>Sistema de Pontos</h2>
+
+            <a href="pontos.html" class="botao-professor botao-pontos">
+                Acessar Sistema de Pontos
+            </a>
+        </section>
+
+
+        <section class="bloco-professor bloco-apagar">
+            <h2>Apagar cadastros</h2>
+
+            <p>
+                Esta opção permite apagar todos os cadastros das salas.
+            </p>
+
+            <button
+                type="button"
+                id="botaoApagarTodos"
+                class="botao-professor botao-apagar"
+            >
+                Apagar todos os cadastros
+            </button>
+
+            <div id="confirmacaoApagarTodos"></div>
+        </section>
+
+
+        <section class="bloco-professor">
+            <h2>Segurança</h2>
+
+            <button
+                type="button"
+                id="botaoTrocarSenha"
+                class="botao-professor botao-senha"
+            >
+                Trocar senha
+            </button>
+
+            <div id="confirmacaoTrocarSenha"></div>
+        </section>
+
+
+        <p id="mensagem"></p>
+
+        <a href="index.html" class="botao-voltar">
+            Voltar para Gincana
+        </a>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="professores.js"></script>
+
+</body>
+</html>
